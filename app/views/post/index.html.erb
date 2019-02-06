@@ -1,0 +1,9 @@
+<%= render "add_post" %>
+<h1>posts</h1>
+
+
+<% @posts.each do |post| %>
+    <%= image_tag(post.image, style:'width:60%') %>
+    <p><%= post.title %></p>
+    <p><%= post.user.name %></p>
+<% end %>
