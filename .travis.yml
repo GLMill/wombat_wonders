@@ -15,3 +15,6 @@ script:
 after_script:
 - bundle exec rake coveralls:push
 - rake db:migrate
+branches:
+  only: 
+  - master
